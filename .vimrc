@@ -3,8 +3,8 @@ syntax on
 colors desert
 vmap <tab> >gv
 vmap <s-tab> <gv
-set ts=2 "tabstop
-set sw=2 "shiftwidth
+set ts=4 "tabstop
+set sw=4 "shiftwidth
 set visualbell " Alert 음을 화면 깜박임으로 바꿔보여주기
  
 set encoding=cp949
@@ -65,3 +65,7 @@ execute pathogen#infect()
 "map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
 "autocmd vimenter * if !argc() | NERDTree | endif
+
+
+"remove mswin <C-a> select all
+nunmap <C-a>
